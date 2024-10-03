@@ -1,3 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'outfit', sans-serif
+}
+
 @keyframes anime {
     from {
         opacity: 0;
@@ -10,6 +18,7 @@
 body {
     margin: 0;
     padding-top: 90px;
+    background-color: rgb(36, 29, 56);
 }
 
 .header-logo {
@@ -25,7 +34,7 @@ body {
     height: 70px;
     padding: 20px;
     box-sizing: border-box;
-    color: white;
+    color: rgb(241, 239, 239);
     background: #3c8dbc linear-gradient(180deg, #599ec6, #3c8dbc) repeat-x;
     ;
 }
@@ -35,7 +44,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 50px;
     margin: 0 5px;
-    color: white;
+    color: rgb(228, 221, 221);
     letter-spacing: 1px;
 }
 
@@ -53,7 +62,7 @@ body {
     margin-top: -6px;
     margin-left: -8px;
     margin-right: 15px;
-    color: white;
+    color: rgb(26, 21, 21);
     letter-spacing: 0px;
 }
 
@@ -61,55 +70,43 @@ body {
     transition: 0.3s;
     transform: scale(1.1);
     font-size: 125%;
-    margin-left: 55%;
+    margin-left: 48%;
     top: -6px !important;
 }
 
 .redes-sociais {
-    display: flex;
-    gap: 10px;
+    font-size: 40px;
+    margin-right: 15px;
+    color: white;
     margin-left: auto;
+    margin-right: 10px;
+    transition: transform 0.6s ease;
+    display: flex;
 }
 
-.facebook-icon {
-    margin-left: -5px;
-    margin-top: -5px;
-    width: 42px !important;
-    height: 42px !important;
+.redes-sociais a {
+    margin-right: 15px;
 }
 
-.redes-sociais img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
-    margin-left: 2px;
-    margin-right: 2px;
+.redes-sociais a i {
+    font-size: 40px;
+    color: white;
+    transition: transform 0.6s ease;
 }
 
-.redes-sociais img:hover {
-    transform: scale(1.1);
-}
-
-.corpo {
-    background-color: white;
+.redes-sociais a:hover {
+    transform: scale(1.2);
 }
 
 .caixa {
     width: 50%;
     height: 20%;
-    border: 1px solid black;
     padding: 20px;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    border-radius: 15px;
+    margin: auto;
     animation: aparecer 1s;
     animation-name: anime;
     animation-duration: 1s;
-    color: rgb(236, 236, 236);
-    background-color: rgb(53, 119, 27);
+    color: rgb(243, 243, 243);
 }
 
 .caixa.visible {
@@ -118,4 +115,28 @@ body {
 
 .caixa box:hover {
     transform: scale(1.1);
+}
+
+nav.bar {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(180, 163, 185);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation-name: anime;
+    animation-duration: 1s;
+}
+
+nav.visible {
+    opacity: 1;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
 }
